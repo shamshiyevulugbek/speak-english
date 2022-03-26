@@ -12,8 +12,10 @@ logging.basicConfig(level=logging.INFO)
 # Initialize bot and dispatcher
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
-
-@dp.message_handler(commands=['start', 'help'])
+@db.message_handler(commands=['help'])
+async def help_buyruq(buyruq:types.Message):
+    await buyruq.answer("Ixtiyoriy tilga tegishli bo'lgan matn yoki so'z kiriting!")
+@dp.message_handler(commands=['start'])
 async def hammaga_salom(xabar: types.Message):
     """
     This handler will be called when user sends `/start` or `/help` command
