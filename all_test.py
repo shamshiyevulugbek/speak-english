@@ -31,6 +31,7 @@ else:
             matn += f"🔥🔥🔥{i['partOfSpeech'].upper()}🔥🔥🔥\n"
             for j in i["definitions"]:
                 matn +="✔️" + j["definition"] + "\n"
-            print(matn)
+        print(matn)
         if audio_url:
             print(audio_url)
+#Barcha test natijalari yaxshi bajarildi
