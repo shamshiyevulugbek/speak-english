@@ -20,7 +20,7 @@ async def hammaga_salom(xabar: types.Message):
     """
     This handler will be called when user sends `/start` or `/help` command
     """
-    await xabar.reply("Assalomu alaykum!\nShamshiye Ulug'bekning ingliz tili botiga xush kelibsiz!")
+    await xabar.reply("Assalomu alaykum!\nShamshiye Ulug'bekning ingliz tili botiga xush kelibsiz!\nBoshlash uchun /start buyrug'ini kiriting!")
     
 @dp.message_handler()
 async def tarjima(salom: types.Message):
