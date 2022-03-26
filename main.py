@@ -15,7 +15,7 @@ dp = Dispatcher(bot)
 # @db.ge_handler(commands=['help'])
 # async def help_buyruq(buyruq:types.Message):
 #     await buyruq.answer("Ixtiyoriy tilga tegishli bo'lgan matn yoki so'z kiriting!")
-@dp.message_handler(commands=['start,help'])
+@dp.message_handler(commands=['start','help'])
 async def hammaga_salom(xabar: types.Message):
     """
     This handler will be called when user sends `/start` or `/help` command
