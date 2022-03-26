@@ -47,6 +47,7 @@ async def tarjima(salom: types.Message):
         except:
             await salom.reply("👉 indefinite word")
             await salom.answer(r.json()["message"])
+            
         else:
             matn = ""
             for i in meanings:
